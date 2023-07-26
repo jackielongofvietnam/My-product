@@ -1,0 +1,1 @@
+<footer><p>&copy; 2023 My Friends System. This website belongs to Thanh Long.</p></footer>

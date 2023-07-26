@@ -1,0 +1,40 @@
+<?php 
+    $friends_query = "INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('john@gmail.com', '1234','john', NOW(), 8);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('tim@gmail.com', '5678','tim', NOW(), 6);  
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('carl@gmail.com', '1234','carl', NOW(), 8);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('mike@gmail.com', '5678','mike', NOW(), 6);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('marry@gmail.com', '1234','marry', NOW(), 7);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('sally@gmail.com', '5678','sally', NOW(), 5);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('roger@gmail.com', '1234','roger', NOW(), 4);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('leo@gmail.com', '5678','leo', NOW(), 4);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('christ@gmail.com', '1234','christ', NOW(), 4);
+                    INSERT INTO friends(friend_email, password, profile_name, date_started, num_of_friends) VALUE ('tina@gmail.com', '5678','tina', NOW(), 2)";
+            
+    $myfriends_query = "INSERT INTO myfriends VALUE (1, 2);
+                        INSERT INTO myfriends VALUE (1, 3);
+                        INSERT INTO myfriends VALUE (1, 4);
+                        INSERT INTO myfriends VALUE (1, 5);
+                        INSERT INTO myfriends VALUE (1, 6);
+                        INSERT INTO myfriends VALUE (1, 7);
+                        INSERT INTO myfriends VALUE (3, 6);
+                        INSERT INTO myfriends VALUE (3, 7);
+                        INSERT INTO myfriends VALUE (3, 8);
+                        INSERT INTO myfriends VALUE (3, 9);
+                        INSERT INTO myfriends VALUE (5, 6);                        
+                        INSERT INTO myfriends VALUE (5, 3);
+                        INSERT INTO myfriends VALUE (5, 10);
+                        INSERT INTO myfriends VALUE (2, 4);
+                        INSERT INTO myfriends VALUE (2, 6);
+                        INSERT INTO myfriends VALUE (2, 9);
+                        INSERT INTO myfriends VALUE (2, 5);
+                        INSERT INTO myfriends VALUE (8, 5);
+                        INSERT INTO myfriends VALUE (8, 1);
+                        INSERT INTO myfriends VALUE (8, 7);
+                        INSERT INTO myfriends VALUE (4, 6);
+                        INSERT INTO myfriends VALUE (4, 3);
+                        INSERT INTO myfriends VALUE (4, 5);                      
+                        INSERT INTO myfriends VALUE (9, 1);
+                        INSERT INTO myfriends VALUE (9, 4);
+                        INSERT INTO myfriends VALUE (10, 3);
+                        INSERT INTO myfriends VALUE (7, 2);";
+?>

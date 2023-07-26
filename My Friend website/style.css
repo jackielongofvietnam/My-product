@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap');
+
+* {
+    font-family: 'Volkhov', serif;
+    text-decoration: none;
+    color: black;
+}
+
+/*Header style*/
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    min-width: 1500px;
+    top: 8px;
+    margin: -8px -8px 50px -8px;
+    background-color: rgb(35, 106, 194);
+}
+
+header #header_content {
+    margin: 0 auto;
+    width: 65%;
+    
+}
+
+header #header_content #logo {
+    margin-right: 0px;
+    float: left;
+}
+
+header #header_content #logo a{
+    color: white;  
+}
+
+header #header_content #menu_option {
+    float: right;
+    width: fit-content;
+    margin-top: 31px;
+}
+
+header #header_content #menu_option .option_group{
+    display: inline-block;
+}
+
+header #header_content #menu_option #main_option {
+    margin-right: 30px;
+}
+
+header #header_content #menu_option a {
+    background-color: rgb(17, 17, 112);
+    color: white; 
+    padding: 8px 20px;
+    margin: 0 5px; 
+    border-radius: 10px;
+    border: 2px solid rgb(17, 17, 112); 
+}
+
+header #header_content #menu_option a:hover {
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px black;
+    color: black;
+    background-color: white;
+    border: 2px solid black; 
+}
+
+/*Universal main block style*/
+main {
+    min-height: 700px;
+    min-width: 1450px;
+    margin-top: 160px;
+    margin-bottom: 100px;
+}
+
+
+/*Index page*/
+#index .section {
+    width: 50%;
+    margin: 100px auto;
+}
+
+#index #welcome {
+    background-image: url("style/friend.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 157px 0;
+}
+
+#index #welcome h1 {
+    text-align: center;
+    background-color: rgba(64,228,251,0.9);
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px 0;
+    border-radius: 40px;
+}
+
+#index #info {
+    background-color: rgb(135, 191, 255);
+    padding: 15px 50px;
+    border: 5px dotted rgb(0, 54, 172);
+    border-radius: 20px;
+}
+
+#index #noti {
+    background-color: rgb(255, 251, 217);
+    padding: 15px 50px;
+    border: 2px solid rgb(255, 219, 14);
+    border-radius: 20px;
+}
+
+#index #noti p {    
+    font-weight: bold;   
+}
+
+
+/*Sign-up and Log-in page*/
+#signup_login form {
+    width: 45%;
+    margin: 0 auto;
+    background-color: rgb(178, 223, 253);
+    padding: 30px;
+    border: 2px dashed rgb(24, 108, 235);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(22, 106, 250);
+}
+#signup_login form h2 {
+    text-align: center;
+}
+
+#signup_login form .input {
+    margin: 35px auto;
+}
+
+#signup_login form .input label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+#signup_login form .input input {
+    width: 37%;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#signup_login form .input .error {
+    margin-left: 32%;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#signup_login form .button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#signup_login form .button input {
+    font-size: large;
+    padding: 8px 20px;
+    margin: 0 10px;
+    color: white;
+    background-color: rgb(17, 17, 112);
+    border: 2px solid rgb(17, 17, 112);
+    border-radius: 20px;
+}
+
+#signup_login form .button input:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.2s;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+/*Friend list page*/
+#friendlist #main_content {
+    width: 50%;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+#friendlist #main_content h2 {
+    text-align: center;
+}
+
+#friendlist #main_content p {
+    width: 57%;
+    margin: 20px auto;
+}
+
+#friendlist #main_content table {
+    width: fit-content;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#friendlist #main_content table td {
+    width: 80%;
+    border: 1px solid black; 
+    padding: 5px 10px;
+}
+
+#friendlist #main_content table td:nth-child(2) {
+    background-color: rgb(125, 223, 255);
+}
+
+#friendlist #main_content table td form input[type=submit] {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#friendlist #main_content table td form input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.1s;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+/*Friend add page*/
+#friendadd #main_content {
+    width: 50%;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+#friendadd #main_content h2 {
+    text-align: center;
+}
+
+#friendadd #main_content p {
+    width: 70%;
+    margin: 20px auto;
+}
+
+#friendadd #main_content table {
+    width: fit-content;
+    max-width: 642px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#friendadd #main_content table td {
+    border: 1px solid black; 
+    padding: 5px 10px;
+}
+#friendadd #main_content table td:first-child {
+    width: 60%;
+}
+
+#friendadd #main_content table td:nth-child(2) {
+    width: 40%;
+    text-align: center;
+}
+
+#friendadd #main_content table td:nth-child(3) {
+    background-color: rgb(125, 223, 255);
+}
+
+#friendadd #main_content table td form input[type=submit] {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#friendadd #main_content table td form input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.1s;
+    box-shadow: 2px 2px 5px black;
+}
+
+#friendadd #main_content #page {
+    width: 177px;
+    margin: 30px auto;
+}
+
+#friendadd #main_content #page a {
+    display: inline-block;
+    height: 20px;
+}
+
+#friendadd #main_content #page a img {
+   height: 20px;
+}
+
+#friendadd #main_content #page span {
+    display: inline-block;
+    margin: 0 20px; 
+    position: relative;
+    bottom: 4px;    
+}
+
+
+/*About page*/
+#about #main_content {
+    background-color: rgb(178, 223, 253);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px dashed rgb(24, 108, 235);
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(22, 106, 250);
+}
+
+#about #main_content h2 {
+    text-align: center;
+}
+
+#about #main_content ul li {
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+#about #main_content ul li ul li {
+    list-style-type: square;
+}
+
+#about #main_content ul li img {
+    width: 95%;
+}
+
+
+/*Footer style*/
+footer {
+    min-width: 1000px;
+    background-color: #51cbff;
+    text-align: center;
+    padding: 10px;
+    margin: 0 -8px -16px -8px;
+}
