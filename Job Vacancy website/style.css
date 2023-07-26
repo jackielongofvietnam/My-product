@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Universally remove underline and set color as black for all anchor*/
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*Style header block*/
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    min-width: 1000px;
+    height: 100px;
+    top: 8px;
+    margin: -16px -8px 50px -8px;
+    border-bottom: 2px solid rgb(177, 170, 170);
+    background-color: white;
+}
+header #header_content {
+    margin: 0 auto;
+    width: 800px;
+    padding: 8px 0;
+}
+
+/*Style logo*/
+header #header_content #logo {  
+    width: 210px;
+    padding-right: 30px;
+    text-align: center;
+    font-weight: 900;
+    border-right: 2px solid rgb(177, 170, 170);
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/*Style menu list*/
+header #header_content #menu {
+    position: relative;
+    left: 300px;
+    top: -60px;
+    width: fit-content;  
+}
+
+/*Style menu options*/
+header #header_content #menu .menu_option {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 3px 20px;
+    border-radius: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+header #header_content #menu .menu_option:first-child { /*remove left margin of first menu option*/
+    margin-left: 0px;
+}
+
+/*Create hovering effect of menu options*/
+header #header_content #menu .menu_option:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Universally style main block for all webpage*/
+main {
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 170px;
+    margin-bottom: 150px;
+    width: fit-content;
+    max-width: 1300px;
+    min-width: 1000px;
+    min-height: 500px;
+}
+
+        
+    /*Index*/
+
+/*Allign sections in the center and create distance*/
+#index .section {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/*Style welcome section*/
+#index #welcome {
+    background-image: url("style/job.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    min-width: 906px;
+    height: 242px;
+    text-align: center;
+    padding: 120px 50px 0 50px;
+    
+}
+#index #welcome h1 { /*Style welcome title*/
+    background-color: rgba(90,190,240,0.4);
+    font-size: 40px;
+}
+
+/*Style info section*/
+#index #info {   
+    padding: 25px 60px;
+    width: 80%;
+    border: 3px rgb(0, 122, 178) dotted;
+    border-radius: 30px;
+}
+#index #info h2 { /*Style info title*/
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+}
+#index #info p:first-of-type { /*Style the name*/
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+    /*Postjobform*/
+
+/*Style form sheet*/
+#pjf form {
+    background-color: rgb(146, 214, 246);
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    font-size: larger;
+    border: 3px rgb(27, 63, 140) dashed;
+    border-radius: 30px;
+}
+
+/*Position label to be on top while keeping textbox on the right*/
+#pjf form .input {
+    display: flex;  
+    margin: 30px auto; 
+}
+
+/*style pattern info*/
+#pjf form .input .pattern {
+    margin-left: 5px;
+    font-size: smaller;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+/*Style input label, only choose label of input field but not of radio-checkbox*/
+#pjf form .input label:first-child{
+    width: 200px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+/*Size input box*/
+#pjf form input[type=text], #pjf form textarea, #pjf form select  {
+    width: 40%;
+    resize: none; /*disable resize for textarea*/
+}
+
+/*Create distance between radio and checkbox options*/
+#pjf form input[type=radio], #pjf form input[type=checkbox] {
+    margin-left: 30px;
+}
+
+/*Style submit_reset button*/
+#pjf form #submit_reset { /*allign to the middle*/
+    width: fit-content;
+    margin: 0 auto;
+}
+#pjf form #submit_reset input { /*Style each button*/
+    margin: 0 10px;
+    padding: 5px 20px;
+    font-size: large;
+    border-radius: 20px;
+}
+#pjf form #submit_reset input:hover { /*create hovering effect*/
+    cursor: pointer;
+    background-color: rgb(0, 44, 205);
+    color: white;
+}
+
+
+    /*Postjobprocess*/
+
+/*Style confirm and error notification*/
+#pjp #confirm, #pjp #error {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+#pjp #confirm {
+    background-color: rgb(130, 246, 130);
+}
+#pjp #error {
+    background-color: rgb(255, 131, 131); 
+}
+
+/*Style button*/
+#pjp #button {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#pjp #button a {
+    margin-right: 20px;
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: white;
+    font-weight: bold;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+#pjp #button a:hover {  
+    color: white;
+    background-color: rgb(0, 44, 205);
+}
+
+
+    /*Searchjobform*/
+
+/*style search background*/
+#sjf {
+    background-image: url('style/searchjob.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    width: 100%;
+    padding-top: 70px;
+}
+
+/*style form*/
+#sjf form {
+    background-color: rgba(90,190,240, 0.7);
+    padding: 20px 30px;
+    width: 80%;
+    margin: 0 auto;   
+}
+#sjf form h1 {
+    text-align: center;
+}
+
+/*style search criteria box to equally organize*/
+#sjf form #searchbox {
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 600px;
+}
+/*relocate search icon*/
+#sjf form #searchbox img {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 11px;
+    width: 30px;
+    height: 30px;    
+}
+
+/*style job title box*/
+#sjf form #searchbox #title {
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    padding-left: 60px;
+    border-radius: 10px;
+}
+/*style filter criteria*/
+#sjf form #searchbox .filter {
+    margin: 20px 0;
+    width: 24%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+/*style search button*/
+#sjf form #search_btn {  
+    float: right;
+    height: 45px;
+    width: 18%;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(195, 217, 249);
+}
+#sjf form #search_btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 44, 205);
+    color: white;
+}
+
+
+    /*Searchjobprocess*/
+
+/*style job result box*/
+#sjp .job_result {
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 5px grey;
+}
+#sjp .job_result:hover {
+    box-shadow: 2px 2px 20px grey;
+}
+
+/*style no result notification*/
+#sjp #no_result {
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    background-color: rgb(255, 131, 131);
+    font-size: large;
+    font-weight: bold;
+}
+
+/*style button*/
+#sjp #button a {
+    margin-right: 20px;
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: rgb(195, 217, 249);
+    font-weight: bold;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+#sjp #button a:hover {  
+    color: white;
+    background-color: rgb(0, 44, 205);
+}
+
+
+    /*About*/
+#abt #content {
+    background-color: rgb(90,190,240);
+    width: 75%;
+    padding: 20px 10px;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+#abt #content ul li {
+    margin: 10px auto;
+    font-size: large;
+}
+
+#abt #content img {
+    width: 85%;
+    margin-left: 40px;
+}
+
+#abt #button {
+    width: fit-content;
+    margin: 0 auto;
+}
+#abt #button a {
+    padding: 5px 20px;
+    display: inline-block;
+    background-color: rgb(195, 217, 249);
+    font-weight: bold;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+#abt #button a:hover {  
+    color: white;
+    background-color: rgb(0, 44, 205);
+}
+
+
+/*footer*/
+footer {   
+    min-width: 1000px;
+    background-color: #F8F8C6;
+    text-align: center;
+    padding: 10px;
+    margin: 0 -8px -16px -8px;   
+}
